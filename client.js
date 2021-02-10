@@ -16,6 +16,7 @@ const connect = function() {
   // confirm connection to server
   conn.on('connect', () => {
     console.log('got a connection');
+    conn.write('Name: IJI');
   })
 
   return conn;
