@@ -19,6 +19,10 @@ const connect = function() {
     conn.write('Name: IJI');
   })
 
+  const sendMove = (direction) => {
+    conn.write(`Move: ${direction}`);
+  }
+
   return conn;
 }
 
